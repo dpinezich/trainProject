@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { Hero } from './hero';
-import { HeroService } from './hero.service';
+import { Hero } from '../hero/hero';
+import { HeroService } from '../hero/hero.service';
 
 @Component({
     selector: 'my-heroes',
@@ -33,10 +33,3 @@ export class HeroesComponent implements OnInit {
         this.router.navigate(['/detail', this.selectedHero.id]);
     }
 }
-
-
-/*
- Copyright 2017 Google Inc. All Rights Reserved.
- Use of this source code is governed by an MIT-style license that
- can be found in the LICENSE file at http://angular.io/license
- */
